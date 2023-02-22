@@ -1,25 +1,43 @@
-import { View, Text, StyleSheet, Image } from "react-native";
-import React from "react";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import React, { cloneElement } from "react";
 
 const Header = () => {
   return (
-    <View>
-      <Image
-        source={require("../../assets/insta-logo.png")}
-        style={styles.headerLogo}
-      />
+    <View style={styles.container}>
+      <TouchableOpacity>
+        <Image
+          source={require("../../assets/insta-logo.png")}
+          style={styles.headerLogo}
+        />
+      </TouchableOpacity>
+      <View style={styles.icContainer}>
+        <Text style={styles.text}>heart</Text>
+        <Text style={styles.text}>messenger</Text>
+        <Text style={styles.text}>heart</Text>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  text: {
-    color: "white",
+  container: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
+    marginHorizontal: 20,
+  },
+  icContainer: {
+    flexDirection: "row",
   },
   headerLogo: {
-    width: 200,
+    width: 150,
     height: 50,
-    alignSelf: "baseline",
+    resizeMode: "contain",
+    // start: 15,
+    // top: 15,
+  },
+  text: {
+    color: "white",
   },
 });
 
