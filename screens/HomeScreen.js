@@ -10,6 +10,8 @@ const HomeScreen = () => {
   );
 };
 
+//make a GET http request in JS using axios library with async/await syntax
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
