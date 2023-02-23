@@ -27,7 +27,7 @@ const Header = () => {
 
         <TouchableOpacity>
           <View style={styles.unreadBadge}>
-            <Text style={styles.unreadBadgeText}>1</Text>
+            <Text style={styles.unreadBadgeText}>2</Text>
           </View>
 
           <Image
@@ -47,8 +47,13 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    paddingLeft: 18,
+    paddingRight: 18,
+    paddingTop: 10,
+    // paddingBottom: 5,
     // backgroundColor: "grey",
-    margin: 18,
+    // borderBottomWidth: 1,
+    // borderBottomColor: "yellow",
   },
   unreadNotifications: {
     position: "absolute",
@@ -93,9 +98,6 @@ const styles = StyleSheet.create({
     height: 27,
     resizeMode: "contain",
     marginLeft: 20,
-  },
-  text: {
-    color: "white",
   },
 });
 
