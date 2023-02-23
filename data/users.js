@@ -3,31 +3,31 @@ export const users = [
     id: "1",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
-    name: "Elon Musk",
+    username: "elon",
   },
   {
     id: "2",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
-    name: "Jeff Bezoz",
+    username: "jeffbez99",
   },
   {
     id: "3",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
-    name: "Bill Gates",
+    username: "gatesnotesfrommicrosoftdude",
   },
   {
     id: "4",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
-    name: "Mark Zuckerberg",
+    username: "zuckerberg",
   },
   {
     id: "5",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/5.jpg",
-    name: "Harry Potter",
+    username: "harrypotter",
   },
   //   {
   //     id: "6",
