@@ -2,7 +2,7 @@ import { users } from "./users";
 
 export const posts = [
   {
-    imageUrl: "https://i.ibb.co/XtRPyRz/DP-15.jpg",
+    imageUrl: "https://i.ibb.co/vLpsQ4t/IMG-20220722-WA0026.jpg",
     username: users[0].username,
     likes: 7421,
     caption: "I love this place",
