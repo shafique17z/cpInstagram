@@ -2,8 +2,8 @@ import { users } from "./users";
 
 export const posts = [
   {
-    imageUrl: "https://i.ibb.co/182bP1y/4k.png",
-    usersname: users[0].username,
+    imageUrl: "https://i.ibb.co/XtRPyRz/DP-15.jpg",
+    username: users[0].username,
     likes: 7421,
     caption: "I love this place",
     profilePicture: users[0].imageUri,
@@ -21,7 +21,7 @@ export const posts = [
   },
   {
     imageUrl: "https://i.ibb.co/182bP1y/4k.png",
-    usersname: users[1].username,
+    username: users[1].username,
     likes: 7401,
     caption: "HAWAII IS AWESOME",
     profilePicture: users[1].imageUri,

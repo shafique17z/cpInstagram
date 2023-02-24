@@ -1,15 +1,14 @@
 export const users = [
   {
     id: "1",
-    imageUri:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
-    username: "elon",
+    imageUri: "https://i.ibb.co/KNJDmmF/IMG-20221225-144143-411.jpg",
+    username: "shafique17z",
   },
   {
     id: "2",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
-    username: "jeffbez99",
+    username: "jeffbezos",
   },
   {
     id: "3",

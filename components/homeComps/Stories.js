@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   storyNameStyles: {
     color: "white",
     marginTop: 2,
+    fontWeight: "400",
     marginStart: 12,
   },
 });

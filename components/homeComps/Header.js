@@ -1,43 +1,47 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import React, { cloneElement } from "react";
+import { Divider } from "react-native-elements/dist/divider/Divider";
 
 const Header = () => {
   return (
-    // HEADER CONTAINER
-    <View style={styles.container}>
-      {/* header logo */}
-      <TouchableOpacity>
-        <Image
-          source={require("../../assets/insta-logo.png")}
-          style={styles.headerLogo}
-        />
-      </TouchableOpacity>
-
-      {/* header icons on the right container*/}
-      <View style={styles.icContainer}>
+    <View>
+      {/* // HEADER CONTAINER */}
+      <View style={styles.container}>
+        {/* header logo */}
         <TouchableOpacity>
-          <View style={styles.unreadNotifications} />
           <Image
-            source={{
-              uri: "https://img.icons8.com/fluency-systems-regular/60/ffffff/like--v1.png",
-            }}
-            style={styles.headerIcons}
+            source={require("../../assets/insta-logo.png")}
+            style={styles.headerLogo}
           />
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <View style={styles.unreadBadge}>
-            <Text style={styles.unreadBadgeText}>2</Text>
-          </View>
+        {/* header icons on the right container*/}
+        <View style={styles.icContainer}>
+          <TouchableOpacity>
+            <View style={styles.unreadNotifications} />
+            <Image
+              source={{
+                uri: "https://img.icons8.com/fluency-systems-regular/60/ffffff/like--v1.png",
+              }}
+              style={styles.headerIcons}
+            />
+          </TouchableOpacity>
 
-          <Image
-            source={{
-              uri: "https://img.icons8.com/fluency-systems-regular/60/ffffff/facebook-messenger.png",
-            }}
-            style={styles.headerIcons}
-          />
-        </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={styles.unreadBadge}>
+              <Text style={styles.unreadBadgeText}>2</Text>
+            </View>
+
+            <Image
+              source={{
+                uri: "https://img.icons8.com/fluency-systems-regular/60/ffffff/facebook-messenger.png",
+              }}
+              style={styles.headerIcons}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
+      <Divider width={1} orientation="vertical" />
     </View>
   );
 };
