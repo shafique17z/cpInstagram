@@ -2,12 +2,14 @@ import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 import Header from "../components/homeComps/Header";
 import Stories from "../components/homeComps/Stories";
+import Post from "../components/homeComps/Post";
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Header />
       <Stories />
+      <Post />
     </View>
   );
 };

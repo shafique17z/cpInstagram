@@ -1,4 +1,11 @@
-import { View, Image, StyleSheet, ScrollView, Text } from "react-native";
+import {
+  View,
+  Image,
+  StyleSheet,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { users } from "../../data/users";
 // import users from "../../data/users";
@@ -45,7 +52,7 @@ const styles = StyleSheet.create({
     borderRadius: 36,
     marginLeft: 15,
     borderWidth: 3,
-    borderColor: "pink",
+    borderColor: "#f46f23",
     //q: apply a border color, it should be gradient which contains instagram's logo's colors
   },
   storyContainer: {
