@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
-import React, { cloneElement } from "react";
+import React, { cloneElement, useState } from "react";
 import { Divider } from "react-native-elements/dist/divider/Divider";
 
 const Header = () => {
@@ -41,7 +41,7 @@ const Header = () => {
           </TouchableOpacity>
         </View>
       </View>
-      <Divider width={1} orientation="vertical" />
+      {/* <Divider width={1} orientation="vertical" /> */}
     </View>
   );
 };
