@@ -1,5 +1,25 @@
 import { users } from "./users";
 
+export const postFooterIcons = [
+  {
+    name: "Like",
+    icon: "https://img.icons8.com/fluency-systems-regular/60/ffffff/like.png",
+    likedIcon: "https://img.icons8.com/ios-glyphs/90/fa314a/like--v1.png",
+  },
+  {
+    name: "Comment",
+    icon: "https://img.icons8.com/material-outlined/60/ffffff/speech-bubble",
+  },
+  {
+    name: "Share",
+    icon: "https://img.icons8.com/material-outlined/60/ffffff/filled-sent.png",
+  },
+  {
+    name: "Save",
+    icon: "https://img.icons8.com/fluency-systems-regular/60/ffffff/bookmark-ribbon.png",
+  },
+];
+
 export const posts = [
   {
     imageUrl: "https://i.ibb.co/vLpsQ4t/IMG-20220722-WA0026.jpg",

@@ -1,6 +1,7 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { Divider } from "react-native-elements/dist/divider/Divider";
+import { postFooterIcons } from "../../data/posts";
 
 const Post = ({ post }) => {
   return (
@@ -8,9 +9,28 @@ const Post = ({ post }) => {
       <Divider width={1} orientation="vertical" />
       <PostHeader post={post} />
       <PostImage post={post} />
+      <View style={{ marginHorizontal: 15, marginTop: 10 }}>
+        <PostFooter icons={postFooterIcons} />
+      </View>
     </View>
   );
 };
+
+const PostFooter = ({ icons }) => (
+  <View style={{ flexDirection: "row" }}>
+    <View style={styles.leftFootContainer}>
+      <Icon iconUrl={icons[0].icon} iconStyles={styles.footerIconStyles} />
+      <Icon iconUrl={icons[1].icon} iconStyles={styles.footerIconStyles} />
+      <Icon iconUrl={icons[2].icon} iconStyles={styles.footerIconStyles} />
+    </View>
+  </View>
+);
+
+const Icon = ({ iconUrl, iconStyles }) => (
+  <TouchableOpacity>
+    <Image source={{ uri: iconUrl }} style={iconStyles} />
+  </TouchableOpacity>
+);
 
 const PostImage = ({ post }) => (
   <View style={{ width: "100%", height: 400 }}>
@@ -37,6 +57,16 @@ const PostHeader = ({ post }) => (
 );
 
 const styles = StyleSheet.create({
+  leftFootContainer: {
+    flexDirection: "row",
+    width: "32%",
+    justifyContent: "space-between",
+  },
+  footerIconStyles: {
+    width: 33,
+    height: 33,
+    marginLeft: 10,
+  },
   threeDots: {
     color: "white",
     fontWeight: "900",
@@ -70,7 +100,7 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
   },
   container: {
-    // marginBottom: 5,
+    marginBottom: 15,
     // backgroundColor: "tomato",
   },
 });
