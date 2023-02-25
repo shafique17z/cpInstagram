@@ -5,6 +5,7 @@ import Header from "../components/homeComps/Header";
 import Stories from "../components/homeComps/Stories";
 import Post from "../components/homeComps/Post";
 import { posts } from "../data/posts";
+import BottomTabs from "../components/homeComps/BottomTabs";
 
 const HomeScreen = () => {
   return (
@@ -12,11 +13,11 @@ const HomeScreen = () => {
       <Header />
       <ScrollView>
         <Stories />
-
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
       </ScrollView>
+      <BottomTabs />
     </View>
   );
 };

@@ -11,17 +11,72 @@ const Post = ({ post }) => {
       <PostImage post={post} />
       <View style={{ marginHorizontal: 15, marginTop: 10 }}>
         <PostFooter icons={postFooterIcons} />
+        <Likes post={post} />
+        <Caption post={post} />
+        <CommentSection post={post} />
+        <Comments post={post} />
       </View>
     </View>
   );
 };
+
+const Comments = ({ post }) => (
+  <>
+    {post.comments.map((comment, index) => (
+      <View key={index} style={{ flexDirection: "row", marginTop: 1 }}>
+        <Text style={{ color: "white" }}>
+          <Text style={{ fontWeight: "600" }}>{comment.username} </Text>
+          <Text style={{ fontWeight: "400" }}>{comment.comment}</Text>
+        </Text>
+      </View>
+    ))}
+  </>
+);
+
+const CommentSection = ({ post }) => (
+  <View style={{ marginTop: 1 }}>
+    {!!post.comments.length && (
+      <Text style={{ color: "grey" }}>
+        View
+        {post.comments.length > 1 ? " all" : ""} {post.comments.length}{" "}
+        {post.comments.length > 1 ? "comments" : "comment"}
+      </Text>
+    )}
+  </View>
+);
+
+const Caption = ({ post }) => (
+  <View style={{ marginTop: 3 }}>
+    <Text style={{ color: "white" }}>
+      <Text style={{ fontWeight: "600" }}>{post.username} </Text>
+      <Text style={{ fontWeight: "400" }}>{post.caption}</Text>
+    </Text>
+  </View>
+);
+
+const Likes = ({ post }) => (
+  <View style={{ flexDirection: "row", marginTop: 5 }}>
+    <Text style={{ color: "white", fontWeight: "600" }}>
+      {post.likes.toLocaleString("en")} likes
+    </Text>
+  </View>
+);
 
 const PostFooter = ({ icons }) => (
   <View style={{ flexDirection: "row" }}>
     <View style={styles.leftFootContainer}>
       <Icon iconUrl={icons[0].icon} iconStyles={styles.footerIconStyles} />
       <Icon iconUrl={icons[1].icon} iconStyles={styles.footerIconStyles} />
-      <Icon iconUrl={icons[2].icon} iconStyles={styles.footerIconStyles} />
+      <Icon
+        iconUrl={icons[2].icon}
+        iconStyles={[styles.footerIconStyles, styles.shareIcon]}
+      />
+    </View>
+    <View style={{ flex: 1, alignItems: "flex-end" }}>
+      <Icon
+        iconUrl={icons[3].icon}
+        iconStyles={[styles.footerIconStyles, styles.bookmarkIcon]}
+      />
     </View>
   </View>
 );
@@ -63,9 +118,16 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   footerIconStyles: {
-    width: 33,
-    height: 33,
-    marginLeft: 10,
+    width: 30,
+    height: 30,
+    marginRight: 10,
+  },
+  bookmarkIcon: {
+    marginRight: 0,
+  },
+  shareIcon: {
+    transform: [{ rotate: "320deg" }],
+    marginTop: -3,
   },
   threeDots: {
     color: "white",

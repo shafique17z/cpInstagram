@@ -8,11 +8,12 @@ export const postFooterIcons = [
   },
   {
     name: "Comment",
+    // icon: "https://img.icons8.com/external-flatart-icons-outline-flatarticons/60/ffffff/external-chat-instagram-flatart-icons-outline-flatarticons.png",
     icon: "https://img.icons8.com/material-outlined/60/ffffff/speech-bubble",
   },
   {
     name: "Share",
-    icon: "https://img.icons8.com/material-outlined/60/ffffff/filled-sent.png",
+    icon: "https://img.icons8.com/fluency-systems-regular/60/ffffff/sent.png",
   },
   {
     name: "Save",
@@ -25,12 +26,13 @@ export const posts = [
     imageUrl: "https://i.ibb.co/vLpsQ4t/IMG-20220722-WA0026.jpg",
     username: users[0].username,
     likes: 7421,
-    caption: "I love this place",
+    caption:
+      "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator 🕑",
     profilePicture: users[0].imageUri,
     comments: [
       {
         username: "qazman1",
-        comment: "This place builds fire!!!!",
+        comment: "This place builds fire!!!! 🔥🔥🔥",
       },
       {
         username: "amanath.js",
@@ -43,12 +45,12 @@ export const posts = [
     imageUrl: "https://i.ibb.co/182bP1y/4k.png",
     username: users[1].username,
     likes: 7401,
-    caption: "HAWAII IS AWESOME",
+    caption: "HAWAII IS AWESOME 🧘🏻‍♂️🌍",
     profilePicture: users[1].imageUri,
     comments: [
       {
         username: "kamikaze",
-        comment: "wear a hawaiin shirt!",
+        comment: "wear a hawaiin shirt, man 🤣👕",
       },
       {
         username: "eminem",
