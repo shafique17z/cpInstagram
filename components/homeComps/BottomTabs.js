@@ -3,8 +3,20 @@ import React from "react";
 
 const BottomTabs = () => {
   return (
-    <View>
-      <Text style={{ color: "white" }}>BottomTabs</Text>
+    <View
+      style={{
+        // flex: 1,
+        alignItems: "center",
+        // justifyContent: "center",
+      }}
+    >
+      <Text
+        style={{
+          color: "white",
+        }}
+      >
+        BottomTabs
+      </Text>
     </View>
   );
 };
