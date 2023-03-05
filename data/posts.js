@@ -58,4 +58,26 @@ export const posts = [
       },
     ],
   },
+  {
+    imageUrl:
+      "https://i.ibb.co/KDy1zfN/Whats-App-Image-2023-03-05-at-22-33-17.jpg",
+    username: users[2].username,
+    likes: 8201,
+    caption: "I'm a developer too! 🤓",
+    profilePicture: users[2].imageUri,
+    comments: [
+      {
+        username: "biscuit",
+        comment: "biscoot is called biscuit in english",
+      },
+      {
+        username: "tate",
+        comment: "stop that fking noise",
+      },
+      {
+        username: "bro.tate",
+        comment: "i'm not bro.tate, i'm bro.tate's brother",
+      },
+    ],
+  },
 ];

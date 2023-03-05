@@ -6,6 +6,7 @@ import Stories from "../components/homeComps/Stories";
 import Post from "../components/homeComps/Post";
 import { posts } from "../data/posts";
 import BottomTabs from "../components/homeComps/BottomTabs";
+import { bottomTabIcons } from "../data/bottomTabIcons";
 
 const HomeScreen = () => {
   return (
@@ -17,12 +18,10 @@ const HomeScreen = () => {
           <Post key={index} post={post} />
         ))}
       </ScrollView>
-      <BottomTabs />
+      <BottomTabs icons={bottomTabIcons} />
     </View>
   );
 };
-
-//make a GET http request in JS using axios library with async/await syntax
 
 const styles = StyleSheet.create({
   container: {

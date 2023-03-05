@@ -14,7 +14,7 @@ export const users = [
     id: "3",
     imageUri:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
-    username: "gatesnotesfrommicrosoftdude",
+    username: "gatesdude",
   },
   {
     id: "4",
