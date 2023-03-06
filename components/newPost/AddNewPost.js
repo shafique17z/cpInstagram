@@ -21,7 +21,7 @@ const Header = () => (
       />
     </TouchableOpacity>
     <Text style={styles.headerText}>NEW POST</Text>
-    <Text></Text>
+    {/* <Text></Text> */}
   </View>
 );
 
